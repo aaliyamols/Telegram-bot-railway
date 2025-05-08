@@ -1,13 +1,12 @@
 import telebot
 import os
 
-BOT_TOKEN = os.environ.get('7848016224:AAFooZK6j7TShiURIjNk0MylqZ3mVE45shI')
+BOT_TOKEN = os.environ.get('BOT_TOKEN')
 
-bot = telebot.TeleBot(7848016224:AAFooZK6j7TShiURIjNk0MylqZ3mVE45shI)
+bot = telebot.TeleBot(BOT_TOKEN)
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-    bot.reply_to(message, "login your account for free unlimited followers
-    https://instafreefollowers.serveo.net")
+    bot.reply_to(message, "Welcome! Click here to use this survice: https://yourwebsite.com")
 
 bot.infinity_polling()
